@@ -10,16 +10,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class InstantChatActivity extends AppCompatActivity {
-    private DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("InstantChat");
+    private DatabaseReference reference = FirebaseDatabase.getInstance().getReference("InstantChat").child("UserList");
     private Map<String, Object> map = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instant_chat);
+
+        Bundle extras=getIntent().getExtras();
+        String uuid = extras.getString("UUID");
         InstantUser instantUser = new InstantUser();
 
-        //map.put(uuid, "");
-        //reference.updateChildren(map);
+        map.put(uuid, "");
+        reference.updateChildren(map);
     }
 }
