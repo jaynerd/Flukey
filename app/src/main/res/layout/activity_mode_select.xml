@@ -16,14 +16,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_mode_select" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_mode" />
 
     <TextView
-        android:id="@+id/tv_mode_select"
+        android:id="@+id/tv_select_mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/tv_mode_select"
+        android:text="@string/tv_select_mode"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

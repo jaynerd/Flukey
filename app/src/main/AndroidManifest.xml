@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InstantChatActivity"></activity>
+        <activity
+            android:name=".InstantChatActivity"
+            android:parentActivityName=".ModeSelectActivity"></activity>
     </application>
 
 </manifest>

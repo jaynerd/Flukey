@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Flukey</string>
-    <string name="tv_mode_select">Select a mode</string>
+    <string name="tv_select_mode">Select a mode</string>
     <string name="btn_instant">Instant</string>
 </resources>
